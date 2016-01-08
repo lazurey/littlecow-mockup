@@ -30,7 +30,12 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('./public/'))
 });
 
-gulp.task('watch', ['sass', 'templates'], function () {
+gulp.task('copy', function() {
+  gulp.src('./src/images/**')
+    .pipe(gulp.dest('./public/assets/images'));
+})
+
+gulp.task('watch', ['sass', 'templates', 'copy'], function () {
   gulp.watch('src/sass/**/*.+(scss|sass)', ['sass']);
   gulp.watch('src/templates/**/*.jade', ['templates']);
 });

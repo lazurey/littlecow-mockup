@@ -20,6 +20,3 @@ pids
 *.tmp
 *.swp
 .idea
-
-# ignore for now
-src/sass/base/bootstrap.css

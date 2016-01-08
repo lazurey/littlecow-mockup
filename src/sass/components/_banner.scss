@@ -1,0 +1,13 @@
+.hero-banner {
+  padding: 10em 0;
+  background-image: url('../images/banner-1.jpg');
+  background-size: 100%;
+  color: $white;
+  text-align: center;
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+}

@@ -1,6 +1,18 @@
 nav
-  ul
-    li
-      a(href='/') 首页
-    li
-      a(href='/') 关于
+  .container
+    .row
+      ul.list-inline.nav.col-md-9
+        li
+          a(href='/') Logo
+        li.active
+          a(href='/') 首页
+        li
+          a(href='/') 农产品
+        li
+          a(href='/') 合作社
+        li
+          a(href='/') 常见问题
+        li
+          a(href='/') 关于我们
+      .search-box.col-md-3
+        input(placeholder='请输入关键字')

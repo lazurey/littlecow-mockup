@@ -8,9 +8,9 @@ html(lang="zh")
     title= 首页
   body
     include ./partials/nav.jade
-    .container
-      h1 Hello World
-      p 你好世界
-      p.
-        这个世界还好吗？
+
+    include ./partials/banner.jade
+    include ./partials/homepage/product-map.jade
+    include ./partials/homepage/story-block.jade
+
     include ./partials/footer.jade

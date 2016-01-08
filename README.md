@@ -1,4 +1,4 @@
-# Simple Mockup Scaffolder
+# 小母牛 mockup
 
 - sass
 - jade
