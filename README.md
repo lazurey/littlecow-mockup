@@ -6,10 +6,10 @@
 
 ## how to start
 
-`npm install`
-`gulp`
-`cd public`
-`http-server`
+- `npm install`
+- `gulp`
+- `cd public`
+- `http-server`
 
 After started, the site is at `http://localhost:8080`
 
