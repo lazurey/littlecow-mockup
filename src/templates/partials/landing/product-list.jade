@@ -1,0 +1,26 @@
+section.product-lists
+  .container.page-block
+    include ./filters.jade
+
+    .head
+      h3 最新发布
+    ul.row.image-list.product-list
+      include ../common/product-list-4items.jade
+
+    .head
+      h3 最受欢迎
+    ul.row.image-list.product-list
+      include ../common/product-list-4items.jade
+
+section.bg-white
+  .container.page-block--lg
+    include ../common/story-list.jade
+
+section.product-lists
+  .container.page-block
+    .head
+      h3 全部农产品
+
+    include ../common/product-list.jade
+    .text-center
+      a.btn.btn-primary.btn-lg 查看更多

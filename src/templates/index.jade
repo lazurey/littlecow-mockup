@@ -1,15 +1,12 @@
 doctype html
 html(lang="zh")
   head
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    link(href='assets/css/main.css', rel='stylesheet')
+    include ./partials/headlibs.jade
     title= 首页
   body
     include ./partials/nav.jade
 
-    include ./partials/banner.jade
+    include ./partials/homepage/banner.jade
     include ./partials/homepage/product-map.jade
     include ./partials/homepage/story-block.jade
     include ./partials/homepage/recommend-product.jade
