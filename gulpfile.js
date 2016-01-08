@@ -33,6 +33,8 @@ gulp.task('templates', function() {
 gulp.task('copy', function() {
   gulp.src('./src/images/**')
     .pipe(gulp.dest('./public/assets/images'));
+  gulp.src('./src/font/**')
+    .pipe(gulp.dest('./public/assets/font'));
 });
 
 gulp.task('copyjs', function() {

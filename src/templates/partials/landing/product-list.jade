@@ -3,12 +3,16 @@ section.product-lists
     include ./filters.jade
 
     .head
-      h3 最新发布
+      h3
+        i.icon-star-filled
+        span 最新发布
     ul.row.image-list.product-list
       include ../common/product-list-4items.jade
 
     .head
-      h3 最受欢迎
+      h3
+        i.icon-thumbs-up-1
+        span 最受欢迎
     ul.row.image-list.product-list
       include ../common/product-list-4items.jade
 
@@ -19,7 +23,9 @@ section.bg-white
 section.product-lists
   .container.page-block
     .head
-      h3 全部农产品
+      h3
+        i.icon-basket
+        span 全部农产品
 
     include ../common/product-list.jade
     .text-center
