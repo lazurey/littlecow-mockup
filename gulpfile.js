@@ -33,11 +33,18 @@ gulp.task('templates', function() {
 gulp.task('copy', function() {
   gulp.src('./src/images/**')
     .pipe(gulp.dest('./public/assets/images'));
-})
+});
 
-gulp.task('watch', ['sass', 'templates', 'copy'], function () {
+gulp.task('copyjs', function() {
+  gulp.src('./src/js/**')
+    .pipe(gulp.dest('./public/assets/js'));
+});
+
+gulp.task('watch', ['sass', 'templates', 'copy', 'copyjs'], function () {
   gulp.watch('src/sass/**/*.+(scss|sass)', ['sass']);
   gulp.watch('src/templates/**/*.jade', ['templates']);
+  gulp.watch('src/js/*.js', ['copyjs']);
+  gulp.watch('src/images/**', ['copy']);
 });
 
 gulp.task('default', ['watch']);
