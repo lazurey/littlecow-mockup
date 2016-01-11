@@ -16,5 +16,35 @@
       opacity: 0.8;
       margin: 1em 0;
     }
+    > a {
+      display: block;
+      img {
+        transition: all .3s;
+        top: 0;
+        left: 0;
+        position: relative;
+      }
+      &:hover {
+        img {
+          top: -2px;
+          left: 2px;
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .image-list {
+    li:nth-child(odd) {
+      clear: left;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .image-list {
+    text-align: center;
   }
 }

@@ -2,11 +2,14 @@ doctype html
 html(lang="zh")
   head
     include ./partials/headlibs.jade
-    title= 锡林郭勒草原黄牛牛腩
+    title= 关于我们
   body(data-page='product-detail')
     include ./partials/nav.jade
 
-    include ./partials/detail/banner.jade
+    section.hero-banner.banner--1
+      .container
+        h1 关于我们
+        p 此页面只是例子
 
     section
       .container.page-block

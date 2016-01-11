@@ -4,16 +4,16 @@ nav
       ul.list-inline.nav.col-md-9
         li
           a(href='/index.html') Logo
-        li.active
+        li(data-page='index')
           a(href='/index.html') 首页
-        li
+        li(data-page='product-landing')
           a(href='/product-landing.html') 农产品
-        li
-          a(href='/') 合作社
-        li
-          a(href='/') 常见问题
-        li
-          a(href='/') 关于我们
+        li(data-page='coops-landing')
+          a(href='/coops-landing.html') 合作社
+        li(data-page='faq')
+          a(href='/faq.html') 常见问题
+        li(data-page='about-us')
+          a(href='/about-us.html') 关于我们
       .search-box.col-md-3
         i.icon-search
         input(placeholder='请输入关键字')

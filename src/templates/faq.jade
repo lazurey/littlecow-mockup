@@ -2,16 +2,18 @@ doctype html
 html(lang="zh")
   head
     include ./partials/headlibs.jade
-    title= 锡林郭勒草原黄牛牛腩
+    title= 常见问题
   body(data-page='product-detail')
     include ./partials/nav.jade
 
-    include ./partials/detail/banner.jade
+    section.hero-banner.banner--1
+      .container
+        h1 常见问题
+        p 此页面只是例子
 
     section
       .container.page-block
-        include ./partials/detail/page-nav.jade
-        include ./partials/detail/product-detail.jade
+        include ./partials/common/faq-list.jade
 
     section.bg-white
       .container.page-block--lg

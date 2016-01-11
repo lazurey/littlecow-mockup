@@ -16,3 +16,18 @@
     background-position: center;
   }
 }
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .hero-banner {
+    padding: 8em 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .hero-banner {
+    padding: 4em 0;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}

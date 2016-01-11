@@ -1,0 +1,29 @@
+section.coop-lists
+  .container.page-block
+    include ./filters.jade
+    .head
+      h3
+        i.icon-star-filled
+        span 最新加入
+    include ../common/coop-list.jade
+
+    .head
+      h3
+        i.icon-thumbs-up-1
+        span 最受欢迎
+    include ../common/coop-list-4.jade
+
+section.bg-white
+  .container.page-block--lg
+    include ../common/story-list.jade
+
+section.product-lists
+  .container.page-block
+    .head
+      h3
+        i.icon-home
+        span 探索全部110个合作社
+
+    include ../common/coop-list-4.jade
+    .text-center
+      a.btn.btn-primary.btn-lg 查看更多
