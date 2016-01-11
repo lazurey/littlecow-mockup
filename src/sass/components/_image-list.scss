@@ -19,7 +19,7 @@
     > a {
       display: block;
       img {
-        transition: all .3s;
+        transition: all .3s ease-out;
         top: 0;
         left: 0;
         position: relative;

@@ -1,0 +1,31 @@
+doctype html
+html(lang="zh")
+  head
+    include ./partials/headlibs.jade
+    title= 育金农作物种植专业合作社
+  body(data-page='coop')
+    include ./partials/nav.jade
+
+    section.hero-banner
+      .container
+        h1 育金农作物种植专业合作社
+        small
+          i.icon-location
+          span 燕格柏乡育金农作物种植专业合作社
+
+    section
+      .container.page-block
+        include ./partials/detail/coop-nav.jade
+        include ./partials/detail/coop-detail.jade
+
+    section
+      .container.page-block
+        .head
+          h3.with-line
+            i.icon-basket
+            span 其他合作社
+        include ./partials/common/coop-list.jade
+
+    include ./partials/footer.jade
+
+    include ./partials/libs.jade
