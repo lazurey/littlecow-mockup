@@ -3,7 +3,7 @@ html(lang="zh")
   head
     include ./partials/headlibs.jade
     title= 关于我们
-  body(data-page='product-detail')
+  body(data-page='about-us')
     include ./partials/nav.jade
 
     section.hero-banner.banner--1
@@ -13,8 +13,23 @@ html(lang="zh")
 
     section
       .container.page-block
-        include ./partials/detail/page-nav.jade
-        include ./partials/detail/product-detail.jade
+        p.
+          海惠·小母牛和一家软件公司联合打造了一个合作社信息平台，帮助偏远社区接入互联网，销售农产品。互联网进村，还可以帮助农户提高数字化生活能力，如在电商平台购买生活物资，在线投资理财，便捷地获取各种生活生产信息。
+        p.
+          海惠·小母牛将从现有60多个合作社中筛选出10个合作社，为他们提供接入网络销售平台的终端设备，并提供电子商务操作员培训。项目预计讲帮助800户贫困农户建立基于互联网的原材料采购，产品销售和质量追溯体系。思特沃克软件技术（ThoughtWorks）公司、山楂科技公司将作为公益伙伴，提供全程技术支持。
+        p.
+          “传递礼品”是小母牛的分享与关怀哲学之具体体现。每一个接受家畜的家庭要签订一份合同，同意传递第一只后代母畜给需要帮助的另一个家庭。同时还要答应把自己学到的知识和技能传递给别人。许多项目还采取多“回传”一头家畜或部分销售收入的办法支持他们的项目。
+
+    include ./partials/homepage/product-map.jade
+
+    section
+      .container.page-block
+        p.
+          海惠·小母牛和一家软件公司联合打造了一个合作社信息平台，帮助偏远社区接入互联网，销售农产品。互联网进村，还可以帮助农户提高数字化生活能力，如在电商平台购买生活物资，在线投资理财，便捷地获取各种生活生产信息。
+        p.
+          海惠·小母牛将从现有60多个合作社中筛选出10个合作社，为他们提供接入网络销售平台的终端设备，并提供电子商务操作员培训。项目预计讲帮助800户贫困农户建立基于互联网的原材料采购，产品销售和质量追溯体系。思特沃克软件技术（ThoughtWorks）公司、山楂科技公司将作为公益伙伴，提供全程技术支持。
+        p.
+          “传递礼品”是小母牛的分享与关怀哲学之具体体现。每一个接受家畜的家庭要签订一份合同，同意传递第一只后代母畜给需要帮助的另一个家庭。同时还要答应把自己学到的知识和技能传递给别人。许多项目还采取多“回传”一头家畜或部分销售收入的办法支持他们的项目。
 
     section.bg-white
       .container.page-block--lg
@@ -25,7 +40,7 @@ html(lang="zh")
         .head
           h3.with-line
             i.icon-basket
-            span 更多产品
+            span 热门产品
         ul.row.image-list
           include ./partials/common/product-list-4items.jade
         .text-center
