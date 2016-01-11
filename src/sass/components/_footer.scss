@@ -18,3 +18,15 @@ footer {
     padding-top: 10px;
   }
 }
+
+@media (max-width: $desktop) {
+  .footer-menu {
+    .col-sm-6.col-xs-6:nth-child(odd) {
+      clear: left;
+    }
+    h5 {
+      color: $white;
+    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

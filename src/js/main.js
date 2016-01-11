@@ -23,11 +23,23 @@
     });
   }
 
+  function init_page_nav() {
+    $('.page-nav a').click(function(e) {
+      e.preventDefault();
+      var ele = $(this).attr('href');
+
+      $('html, body').animate({
+          scrollTop: $(ele).offset().top
+      }, 500);
+    });
+  }
+
   $(document).ready(function() {
     console.log('initializing');
     init_nav();
     init_tabs();
     init_faq();
+    init_page_nav();
   });
 
 })(jQuery || window.jQuery);
